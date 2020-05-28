@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8DFFD180"
+    tools:context="co.example.dutchpaycalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/fe4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="24sp"
+        android:text="4차"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fefour"
+        app:layout_constraintEnd_toStartOf="@+id/fefour"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fe5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fadingEdge="horizontal|vertical|none"
+        android:lineSpacingExtra="24sp"
+        android:text="5차"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fefive"
+        app:layout_constraintEnd_toStartOf="@+id/fefive"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fe8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="24sp"
+        android:text="인원"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/peoplenum"
+        app:layout_constraintEnd_toStartOf="@+id/peoplenum" />
+
+    <TextView
+        android:id="@+id/fe9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:lineSpacingExtra="24sp"
+        android:text="명"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/peoplenum"
+        app:layout_constraintStart_toEndOf="@+id/peoplenum" />
+
+    <TextView
+        android:id="@+id/fe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="24sp"
+        android:text="2차"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fetwo"
+        app:layout_constraintEnd_toStartOf="@+id/fetwo"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="24sp"
+        android:text="3차"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fethree"
+        app:layout_constraintEnd_toStartOf="@+id/fethree"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/fetwo"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="금액"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feone" />
+
+    <EditText
+        android:id="@+id/fethree"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="금액"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fetwo" />
+
+    <EditText
+        android:id="@+id/fefour"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="死차"
+        android:imeOptions="actionDone|flagNavigatePrevious"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fethree" />
+
+    <EditText
+        android:id="@+id/fefive"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="이젠그만..."
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fefour" />
+
+    <EditText
+        android:id="@+id/peoplenum"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:numeric="integer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fefive" />
+
+    <EditText
+        android:id="@+id/feone"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:hint="금액"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:lineSpacingExtra="12sp"
+        android:numeric="signed"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="24sp"
+        android:text="1차"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/feone"
+        app:layout_constraintEnd_toStartOf="@+id/feone"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:background="#CE8E24AA"
+        android:text="정산"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peoplenum" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/ic_delete_black_24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/fe8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fefive" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
