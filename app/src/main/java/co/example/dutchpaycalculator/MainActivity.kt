@@ -133,7 +133,6 @@ class MainActivity : AppCompatActivity(){
             result.setText(h.toString())
         }
 
-
     }
 
     override fun onRestart() {
