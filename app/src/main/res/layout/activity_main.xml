@@ -171,7 +171,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fefive" />
 
@@ -214,9 +214,10 @@
         android:layout_marginStart="75dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="75dp"
-        android:background="#CE8E24AA"
+        android:background="#283593"
+        android:fadingEdge="none"
         android:text="정산"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -235,15 +236,15 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/ic_delete_black_24dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:drawable/ic_menu_delete"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/peoplenum"
         app:layout_constraintEnd_toStartOf="@+id/fe8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fefive" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fefive"
+        app:layout_constraintTop_toTopOf="@+id/peoplenum" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

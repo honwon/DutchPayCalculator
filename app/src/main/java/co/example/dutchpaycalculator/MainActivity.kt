@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity(){
             var n = peoplenum.text.toString().toIntOrNull()?:0
             var sum =a+b+c+d+e
             if (n==0) {
-                result.text = "잘못된 계산입니다."
+                result.text = "잘못된 계산입니다"
                 peoplenum.text= null
                 var n = peoplenum.text.toString().toIntOrNull()?:0
             } else {
@@ -77,11 +77,11 @@ class MainActivity : AppCompatActivity(){
                 var nus = NumberFormat.getIntegerInstance().format(nu)
 
                 if (nu == 0) {
-                    result.text = "다른 값을 입력해주세요."
+                    result.text = "다른 값을 입력해주세요"
                 } else if (nu == 100) {
-                    result.text = "잘못된 계산입니다."
+                    result.text = "잘못된 계산입니다"
                 } else {
-                    result.text = "한 명당 ${nus}원 입니다."
+                    result.text = "한 명당 ${nus}원 입니다"
                 }
             }
             saveData(a,b,c,d,e,n,result.text.toString())
@@ -111,25 +111,25 @@ class MainActivity : AppCompatActivity(){
         var n = pref.getInt("_PEOPLE",0)
         var h = pref.getString("_STR","")
 
-        if (a!=0){
+        if (a != 0) {
             feone.setText(a.toString())
         }
-        if (b!=0) {
+        if (b != 0) {
             fetwo.setText(b.toString())
         }
-        if (c!=0) {
+        if (c != 0) {
             fethree.setText(c.toString())
         }
-        if (d!=0) {
+        if (d != 0) {
             fefour.setText(d.toString())
         }
-        if (e!=0) {
+        if (e != 0) {
             fefive.setText(e.toString())
         }
-        if (n!=0) {
+        if (n != 0) {
             peoplenum.setText(n.toString())
         }
-        if (n!=0) {
+        if (n != 0) {
             result.setText(h.toString())
         }
 
